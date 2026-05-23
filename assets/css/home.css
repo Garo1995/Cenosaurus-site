@@ -864,10 +864,11 @@ a:hover{
 
     background: #F67011;
 }
-.tariffs-rel .btn{
+.compare-rates {
     margin: 40px auto 0;
+}
+.compare-rates .btn{
     color: #FBFBFB;
-
 }
 
 
@@ -1957,18 +1958,13 @@ footer{
     }
     .service-cards {
         margin-top: 10px;
-        overflow-x: scroll;
-        margin-right: -20px;
     }
-    .service-table {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 608px;
-        padding-right: 20px;
-    }
+
     .service-names {
-        width: 49%;
-        gap: 8px;
+        gap: 10px;
+    }
+    .client-stories-boxes {
+        padding: 53px 20px 20px;
     }
     .footer-main {
         flex-direction: column;
@@ -2022,18 +2018,15 @@ footer{
         margin-top: -115px;
         padding: 20px;
     }
-    .tariffs-rel .btn {
+    .compare-rates .btn {
         width: 100%;
-        max-width: 323px;
-        margin-right: auto;
-        margin-left: 0;
+        max-width: 360px;
     }
+
     .prices-form-tit h2 br{
         display: none;
     }
-    .tariffs-rel {
-        padding-bottom: 40px;
-    }
+
     .contact-section .container{
         padding: 0;
     }
@@ -2124,6 +2117,7 @@ footer{
     }
     .prices-form .btn{
         width: 100%;
+        max-width: 340px;
     }
     .tariffs-text ul li {
         font-size: 14px;
@@ -2139,5 +2133,8 @@ footer{
     .prices-form .prices-form-tit h2 {
         max-width: 260px;
         width: 100%;
+    }
+    .tariffs-title h2{
+        font-size: 32px;
     }
 }
