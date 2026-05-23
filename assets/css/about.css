@@ -1,0 +1,327 @@
+.about-company{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/about-fon.png");
+    width: 100%;
+}
+
+.about-company-cnt{
+    height: 1024px;
+    padding-top: 342px;
+    padding-bottom: 40px;
+}
+.about-company-title{
+    max-width: 850px;
+    width: 100%;
+}
+.about-company-title h3{
+    max-width: 698px;
+    width: 100%;
+    margin: 5px 0 20px;
+}
+
+
+
+
+.about-social ul{
+    display: flex;
+    gap: 10px;
+}
+.about-social ul li{
+    width: 100%;
+}
+.about-social ul li a{
+    width: 100%;
+    background: #1C1C1C;
+    height: 64px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.about-social ul li a:hover{
+    background: #F67011;
+    color: #FBFBFB;
+}
+
+
+
+.our-team-rel{
+    margin-top: 40px;
+}
+
+.our-team-photo{
+    width: 100%;
+    height: 100%;
+}
+.our-team-photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.our-team-name{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    background: #1C1C1C;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.our-team-name p{
+    color: #B6B6B6;
+}
+
+
+
+
+.section-wrapper{
+    margin-top: 56px;
+    position: relative;
+}
+.section-wrapper:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 525px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
+    z-index: 1;
+}
+
+
+
+
+.timeline-scroll {
+    overflow-x: auto;
+    overflow-y: visible;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+}
+.timeline-scroll::-webkit-scrollbar { display: none; }
+.timeline-scroll.grabbing { cursor: grabbing; }
+
+/* ---- Inner track ---- */
+.timeline-track {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    min-width: max-content;
+    gap: 70px;
+}
+
+/* Horizontal line */
+.timeline-track::before {
+    content: '';
+    position: absolute;
+    top: 9px; /* aligns with dot center */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(270deg, #101010 0%, #373737 42.79%, #101010 100%);
+
+}
+
+/* ---- Each year item ---- */
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 260px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* Dot on the line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FBFBFB;
+    transition: background 0.3s, border-color 0.3s, transform 0.3s;
+    z-index: 2;
+}
+
+.timeline-item.active::before {
+    background: #F67011;
+}
+
+
+/* Year label */
+.year-label {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    margin-top: 30px;
+    transition: color 0.3s;
+    cursor: pointer;
+    color: #FBFBFB;
+}
+
+.timeline-item.active .year-label { color: #F67011; }
+.timeline-item:hover .year-label   { color: #F67011; }
+
+.year-desc {
+    margin-top: 12px;
+    width: 472px;
+    opacity: 0;
+    transform: translateY(10px);
+    background: #1C1C1C;
+
+    transition: opacity 0.35s ease, transform 0.35s ease, color 0.3s;
+
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    color: #FBFBFB;
+}
+
+.timeline-item.active .year-desc {
+    opacity: 1;
+    transform: translateY(0);
+    color: #bbb;
+}
+
+/* Fade-in for all on load */
+.timeline-item {
+    animation: fadeUp 0.5s ease both;
+}
+.timeline-item:nth-child(1) { animation-delay: 0.05s; }
+.timeline-item:nth-child(2) { animation-delay: 0.12s; }
+.timeline-item:nth-child(3) { animation-delay: 0.19s; }
+.timeline-item:nth-child(4) { animation-delay: 0.26s; }
+.timeline-item:nth-child(5) { animation-delay: 0.33s; }
+.timeline-item:nth-child(6) { animation-delay: 0.40s; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .about-company {
+        background-position: center;
+    }
+    .section-wrapper:after {
+        max-width: 350px;
+    }
+}
+
+
+
+@media (max-width: 1199px){
+    .about-company-title {
+        max-width: 600px;
+    }
+    .about-company-cnt {
+        padding-top: 150px;
+    }
+    .our-team-rel {
+        margin-right: -20px;
+    }
+
+}
+
+
+@media (max-width: 1020px){
+    .about-social ul {
+        flex-wrap: wrap;
+    }
+    .about-social ul li {
+        width: calc(33.333333% - 7px);
+    }
+    .about-company-cnt {
+        padding-top: 110px;
+        padding-bottom: 20px;
+    }
+
+
+    .about-company {
+        background-image: url(../img/about-fon-tab.png);
+    }
+
+    .timeline-item-last .year-desc{
+        width: 300px;
+    }
+    .timeline-item {
+        width: 210px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .about-company-title h3 {
+        margin: 12px 0 23px;
+        font-size: 16px;
+        line-height: 124%;
+    }
+    .year-desc {
+        width: 223px;
+        padding: 20px;
+        font-size: 14px;
+    }
+    .year-label {
+        font-size: 56px;
+    }
+    .section-wrapper:after {
+        max-width: 230px;
+    }
+    .timeline-item-last .year-desc {
+        width: 185px;
+    }
+
+
+}
+@media (max-width: 575px){
+    .about-company-title h3 {
+        font-size: 14px;
+    }
+    .about-company-cnt {
+        padding-top: 90px;
+        height: 900px;
+    }
+    .about-social ul li {
+        width: calc(50% - 7px);
+    }
+    .about-company {
+        background-image: url(../img/about-fon-mobile.png);
+    }
+    .year-label {
+        font-size: 42px;
+    }
+    .timeline-track {
+        gap: 24px;
+    }
+    .section-wrapper:after {
+        max-width: 121px;
+        right: -20px;
+    }
+}

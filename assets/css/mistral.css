@@ -1,0 +1,339 @@
+.mistral-menu{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.mistral-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mistral-menu ul li {
+    width: 100%;
+}
+.mistral-menu ul li a{
+    background: #1C1C1C;
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    color: #FBFBFB;
+}
+
+.mistral-menu ul li a:hover{
+    background: #F67011;
+
+}
+
+
+
+
+
+.brief-information{
+    gap: 20px;
+}
+.brief-information .client-stories-boxes{
+    width: 50%;
+}
+.client-stories-boxes h2{
+    margin-top: 10px;
+}
+
+.brief-information-box{
+    width: 50%;
+    background: #1C1C1C;
+    padding: 40px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    border-radius: 10px;
+}
+
+.brief-information-box:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/slider.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.brief-information-text{
+    gap: 10px;
+    max-width: 630px;
+    width: 100%;
+}
+
+.approach-draw-flex{
+    background: #0B0A06;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px;
+}
+.approach-draw-title{
+    width: 50%;
+    gap: 20px;
+}
+
+.approach-draw-cnt{
+    width: 50%;
+}
+.approach-draw-cnt h2{
+    max-width: 585px;
+    width: 100%;
+}
+.approach-draw-col{
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.approach-draw{
+    gap: 20px;
+    width: 100%;
+    background: #1C1C1C;
+    position: relative;
+    min-height: 140px;
+    border-radius: 10px;
+    padding: 20px 40px 20px 20px;
+    justify-content: space-between;
+}
+.approach-draw:after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    border-radius: 50%;
+    background: #F67011;
+    width: 16px;
+    height: 16px;
+}
+.approach-draw p{
+    color: #B6B6B6;
+    max-width: 420px;
+    width: 100%;
+}
+
+
+.platform-flex{
+    gap: 40px;
+}
+.platform-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+    max-width: 303px;
+    width: 100%;
+    min-height: 146px;
+}
+.platform-name p{
+    color: #B6B6B6;
+}
+
+.platform-info{
+    gap: 20px;
+    max-width: 1208px;
+    width: 100%;
+}
+.platform-info img{
+    width: 104px;
+}
+.platform-info h2{
+    color: #B6B6B6;
+}
+.approach-draw-text{
+    gap: 10px;
+}
+
+
+
+.approach-dot{
+    background-image: url("../img/approach-fon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.approach-dot .approach-draw {
+    min-height: 110px;
+    justify-content: center;
+}
+.approach-dot .approach-draw:after {
+    top: auto;
+}
+
+
+.platform-col{
+    gap: 40px;
+}
+
+
+
+.approach-result{
+    background-image: url("../img/approach-fon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 20px;
+}
+.approach-result h3{
+    max-width: 760px;
+    width: 100%;
+}
+
+
+.studies-clients{
+    margin-top: 40px;
+}
+
+
+.studies-btn{
+    margin: 40px auto 0;
+    position: relative;
+    gap: 20px;
+    width: 120px;
+    height: 50px;
+}
+
+
+
+
+
+@media (max-width: 1599px){
+    .studies-slider{
+        margin-right: -20px;
+    }
+    .platform-info {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1399px){
+    .mistral-menu {
+        bottom: 20px;
+        left: auto;
+        width: 100%;
+        overflow-x: scroll;
+        right: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .mistral-menu::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .mistral-menu::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+    }
+    .mistral-menu ul {
+        width: 1720px;
+    }
+}
+
+@media (max-width: 1199px){
+    .brief-information-box {
+        height: 500px;
+    }
+    .approach-result h3 {
+        max-width: 600px;
+    }
+
+
+}
+
+@media (max-width: 1020px){
+    .mistral-menu ul {
+        width: 1530px;
+    }
+    .brief-information {
+        flex-direction: column;
+    }
+    .brief-information .client-stories-boxes {
+        width: 100%;
+        padding: 20px;
+    }
+    .brief-information-box {
+        height: 500px;
+        padding: 20px;
+        width: 100%;
+    }
+    .approach-draw-flex {
+        gap: 40px;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .approach-draw-title {
+        width: 100%;
+    }
+    .approach-draw-cnt {
+        width: 100%;
+    }
+    .platform-flex {
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .platform-name {
+        min-height: auto;
+    }
+    .approach-dot .approach-draw {
+        min-height: 88px;
+    }
+    .platform-col {
+        gap: 60px;
+    }
+    .approach-result {
+        padding: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .brief-information .client-stories-boxes h2 {
+        max-width: 505px;
+        width: 100%;
+    }
+    .studies-btn {
+        margin: 20px auto 0;
+    }
+    .mistral-menu {
+        bottom: 0;
+    }
+    .mistral-menu-logo{
+        bottom: 45px;
+    }
+}
+@media (max-width: 767px) {
+    .studies-btn .swiper-button-next, .studies-btn .swiper-button-prev {
+        display: flex;
+    }
+}
+@media (max-width: 575px){
+    .approach-draw-col {
+        margin-top: 20px;
+    }
+    .client-stories-sm .client-stories-text p {
+        display: -webkit-box;
+        -webkit-line-clamp: unset;
+        -webkit-box-orient: unset;
+        overflow: unset;
+    }
+    .mistral-menu-logo{
+        bottom: 70px;
+    }
+
+}

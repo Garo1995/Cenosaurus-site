@@ -1,0 +1,154 @@
+
+
+.articles-wrap{
+    margin: 40px 0;
+    gap: 20px;
+}
+.articles-boxes{
+    width: calc(33.333333% - 14px);
+    background: #1C1C1C;
+    min-height: 560px;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+.articles-title{
+    gap: 20px;
+    padding-right: 40px;
+}
+.articles-info{
+    gap: 20px;
+}
+
+
+
+
+.price-monitor-tit h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+.studies-slider .articles-boxes{
+    width: 100%;
+}
+
+
+
+
+.price-monitor-text span{
+    color: #F67011;
+}
+
+
+.price-monitor-text h3{
+    margin-bottom: 20px;
+    color: #F67011;
+    max-width: 750px;
+    width: 100%;
+}
+.price-monitor-text h4{
+    margin-bottom: 20px;
+    max-width: 750px;
+    width: 100%;
+}
+
+.price-monitor-text p{
+    max-width: 750px;
+    width: 100%;
+}
+
+.buying-behavior .price-monitor-text ul li{
+    color: #B6B6B6;
+    font-size: 16px;
+    line-height: 130%;
+}
+.buying-behavior .price-monitor-text ul {
+    margin-bottom: 20px;
+    max-width: 750px;
+    width: 100%;
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+.ul-for-number ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.buying-behavior .ul-for-number ul{
+    list-style-type: auto;
+}
+
+
+
+
+
+
+@media (max-width: 1199px){
+    .articles-boxes {
+        width: calc(50% - 14px);
+    }
+}
+
+
+
+
+
+@media (max-width: 1020px){
+
+    .articles-boxes {
+        width: 100%;
+        display: none;
+    }
+    .articles-boxes:nth-child(1),
+    .articles-boxes:nth-child(2),
+    .articles-boxes:nth-child(3),
+    .articles-boxes:nth-child(4){
+        display: flex;
+    }
+    .articles-wrap {
+        margin: 20px 0;
+    }
+    .articles-opened .articles-boxes{
+        display: flex;
+    }
+}
+
+@media (max-width: 575px){
+
+
+    .articles-boxes {
+        min-height: 335px;
+        padding: 20px;
+        gap: 24px;
+    }
+    .articles-title {
+        padding-right: 0;
+    }
+    .articles-info p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .buying-behavior  .price-monitor-info {
+        gap: 20px;
+    }
+    .buying-behavior .price-monitor-text ul {
+        margin-bottom: 16px;
+        margin-left: 20px;
+    }
+    .buying-behavior .price-monitor-text ul li {
+        font-size: 12px;
+    }
+    .price-monitor-tit h2 br{
+        display: none;
+    }
+}

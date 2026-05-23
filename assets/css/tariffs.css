@@ -1,0 +1,262 @@
+.tariffs-page-title{
+    gap: 15px 0;
+}
+.tariffs-page-title h3{
+    text-align: center;
+}
+.tariffs-page-title .btn{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.icon-infinity{
+    content: url("../img/infinity.svg");
+}
+
+
+.pricing-table{
+    overflow:auto;
+    margin-top: 40px;
+}
+
+.pricing-wrapper{
+    min-width:1700px;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:344px repeat(5, 1fr);
+}
+
+
+.pricing-card{
+    border-left:1px solid #FFFFFF33;
+}
+
+.pricing-head{
+    height:128px;
+    padding:30px;
+    border-bottom:1px solid #FFFFFF33;
+    background:#1C1C1C;
+}
+
+.pricing-head p{
+    margin-top: 5px;
+}
+
+.pricing-card.active .pricing-head{
+    position:relative;
+    background-image: url("../img/tab-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing-card.active .pricing-head::after{
+    content:'';
+    position:absolute;
+    top:30px;
+    right:30px;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#F67011;
+}
+
+.pricing-row{
+    height:64px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+    color:#FBFBFB;
+    background: #0B0A06;
+
+}
+
+.pricing-labels .pricing-row{
+    justify-content:flex-start;
+    padding: 2px 20px;
+    color:#FBFBFB;
+    font-size:20px;
+    background: #0B0A06;
+    font-weight: 400;
+}
+
+.pricing-labels .pricing-row:nth-child(even){
+    background: #1C1C1C;
+}
+.pricing-card .pricing-row:nth-child(even){
+    background: #1C1C1C;
+
+}
+
+.pricing-footer{
+    min-height:299px;
+    padding:30px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-end;
+    text-align:center;
+    background: #1C1C1C;
+    border-top: 1px solid #FFFFFF33;
+}
+.active .pricing-footer{
+    background-image: url('../img/component-fon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pricing-footer .btn-text{
+    font-size: 16px;
+    margin-top: 48px;
+}
+.old-price{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:8px;
+}
+
+.old-price span{
+    color:#FBFBFB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -3%;
+}
+
+.old-price small{
+    background:#F67011;
+    color:#FBFBFB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    padding:4px 10px;
+    border-radius:30px;
+}
+
+.price{
+    margin-bottom: 6px;
+    margin-top: 4px;
+    color:#FBFBFB;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: -3%;
+}
+.price-info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.price-info p{
+    color: #FBFBFB;
+}
+.price-info  span{
+    color: #B6B6B6;
+}
+
+
+
+.empty{
+    background:#1C1C1C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calculator-fon{
+    background-image: url("../img/calculator-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .pricing-table {
+        margin-right: -20px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1199px){
+    .pricing-labels .pricing-row {
+        font-size: 18px;
+    }
+    .pricing-grid {
+        grid-template-columns: 298px repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1020px){
+    .pricing-grid {
+        grid-template-columns: 272px repeat(5, 1fr);
+    }
+    .pricing-labels .pricing-row {
+        padding: 2px 10px 2px 20px;
+    }
+    .pricing-wrapper {
+        min-width: 1628px;
+    }
+    .calculator-fon {
+        padding: 160px 40px;
+    }
+
+}
+
+@media (max-width: 575px){
+    .tariffs-page-title h3 br{
+        display: none;
+    }
+    .tariffs-page-title h3 {
+        text-align: center;
+        font-size: 14px;
+    }
+    .calculator-fon {
+        padding: 110px 20px;
+    }
+    .calculator-main .container{
+        padding: 0;
+    }
+}

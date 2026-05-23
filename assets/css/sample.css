@@ -1,0 +1,155 @@
+.price-monitor{
+    background-image: url("../img/price-monitor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.price-monitor-tit{
+    height: 700px;
+    position: relative;
+}
+.price-monitor-tit h1 {
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+}
+.price-monitor-logo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+.logo-cenozav-mob{
+    display: none;
+}
+
+.price-monitor-cnt{
+    background: #101010;
+    gap: 80px;
+    padding-top: 150px;
+}
+
+
+.price-monitor-info{
+    width: 100%;
+    gap: 10px;
+}
+.price-monitor-info p{
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    color: #FBFBFB;
+    margin-top: 12px;
+}
+.price-monitor-info ul{
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.price-monitor-info ul li{
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    color: #FBFBFB;
+}
+.price-monitor-text{
+    max-width: 849px;
+    width: 100%;
+}
+.price-monitor-photo{
+    margin-top: 40px;
+}
+.price-monitor-photo img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 1599px){
+    .price-monitor-text {
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 1299px){
+    .price-monitor-info p {
+        font-size: 18px;
+    }
+    .price-monitor-photo {
+        margin-top: 20px;
+    }
+    .price-monitor-tit {
+        height: 600px;
+    }
+    .price-monitor-cnt {
+        gap: 40px;
+        padding-top: 100px;
+    }
+
+}
+@media (max-width: 1199px){
+    .price-monitor-info {
+        width: 100%;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .price-monitor-text {
+        max-width: 840px;
+    }
+
+
+
+
+}
+@media (max-width: 1020px){
+    .price-monitor .container{
+        padding: 0;
+    }
+    .price-monitor {
+        background-position: center;
+    }
+}
+@media (max-width: 767px){
+    .price-monitor {
+        background-position: center;
+    }
+    .price-monitor-tit {
+        height: 450px;
+    }
+    .price-monitor-info ul li {
+        font-size: 18px;
+    }
+    .price-monitor-info ul {
+        list-style-type: none;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 575px){
+    .price-monitor-info ul li {
+        font-size: 14px;
+    }
+    .price-monitor-info p {
+        font-size: 14px;
+    }
+    .price-monitor-info {
+        gap: 0;
+    }
+    .price-monitor-cnt {
+        padding-top: 80px;
+    }
+    .logo-cenozav{
+        display: none;
+    }
+    .logo-cenozav-mob{
+        display: block;
+    }
+}
