@@ -1320,7 +1320,7 @@ footer{
     padding: 40px;
     display: flex;
     flex-direction: column;
-    gap: 145px;
+    gap: 20px;
 }
 
 .modal-main .form-input-col {
@@ -1331,7 +1331,9 @@ footer{
     max-width: 415px;
     width: 100%;
 }
-
+.modal-main h2{
+    text-align: left;
+}
 
 .mobail-social{
     display: none;
@@ -1624,7 +1626,6 @@ footer{
     .modal-main {
         max-width: 550px;
         padding: 20px;
-        gap: 40px;
     }
     .close {
         top: 20px;
@@ -2081,9 +2082,7 @@ footer{
     .cenozavr-logo{
         bottom: 0;
     }
-    .modal-main {
-        gap: 30px;
-    }
+
     .prices-form-tit {
         gap: 15px;
     }
@@ -2136,5 +2135,16 @@ footer{
     }
     .tariffs-title h2{
         font-size: 32px;
+    }
+    .form-check {
+        margin: 12px 0 15px;
+    }
+    .form-check small {
+        line-height: 115%;
+        display: block;
+    }
+    .modal-main .btn{
+        width: 100%;
+        max-width: 345px;
     }
 }

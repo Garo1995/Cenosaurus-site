@@ -200,9 +200,7 @@ header{
         padding-bottom: 20px;
     }
     .transition-menu {
-
         transform: translateX(0);
-
     }
     .menu-mobile-scr{
         overflow-y: auto;

@@ -56,13 +56,12 @@
 }
 
 .can-contact-tit{
-    display: flex;
-    gap: 10px;
     width: 100%;
 }
 .can-contact-tit h4{
     max-width: 330px;
     width: 100%;
+    margin-bottom: 10px;
 }
 .can-contact-tit p{
     max-width: 480px;
@@ -74,8 +73,16 @@
     top: 20px;
     transform: unset;
 }
+.can-contact-tit a{
+    line-height: 136%;
+    color: #B6B6B6;
+    font-size: 16px;
+    text-decoration: none;
+}
 
-
+.can-contact-tit a:hover{
+    color: #FBFBFB;
+}
 
 
 
@@ -155,5 +162,20 @@
 @media (max-width: 575px){
     .can-contact-tit {
         flex-direction: column;
+    }
+    .can-contact-name p {
+        padding-right: 30px;
+    }
+    .can-contact-name p br {
+        display: none;
+    }
+    .can-contact-tit {
+        padding-right: 20px;
+    }
+    .can-contact-tit a{
+        font-size: 14px;
+    }
+    .contact-page-flex {
+        padding: 20px 10px;
     }
 }
